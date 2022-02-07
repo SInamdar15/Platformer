@@ -10,9 +10,28 @@ public class GameManager : MonoBehaviour
 
     //event to listen to for the score change
     public static UnityEvent ScoreUpdate = new UnityEvent();
+    public static UnityEvent DeathUpdate = new UnityEvent();
 
     //score property and int behind it
     private static int _score = 0;
+    private static int _death = 0;
+
+    public static int death
+    {
+        get
+        {
+            return _death;
+        }
+        set
+        {
+            _death = value;
+            DeathUpdate.Invoke();
+        }
+    }
+
+
+
+
     public static int score
     {
         get
@@ -60,6 +79,7 @@ public class GameManager : MonoBehaviour
     public static void ResetGame()
     {
         score = 0;
+        death = 0;
     }
 
 }

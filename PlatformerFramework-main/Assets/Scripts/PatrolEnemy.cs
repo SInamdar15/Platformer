@@ -6,6 +6,7 @@ public class PatrolEnemy : MonoBehaviour
 {
     public float speed;
     public bool movingRight = false;
+    public int points = 1;
 
     public Transform frontDetection;
     public Transform backDetection;
@@ -52,4 +53,12 @@ public class PatrolEnemy : MonoBehaviour
 
 
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            GameManager.death += points;
+        }
+    }
+
 }

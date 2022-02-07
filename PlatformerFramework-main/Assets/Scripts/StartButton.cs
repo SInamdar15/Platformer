@@ -16,5 +16,6 @@ public class StartButton : MonoBehaviour
     public void ResetData()
     {
         GameManager.score = 0;
+        GameManager.death = 0;
     }
 }
