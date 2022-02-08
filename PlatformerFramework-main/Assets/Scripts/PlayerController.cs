@@ -12,6 +12,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
+    public int points = 1;
     //speed and movement variables
     public float speed;
     public float airSpeed;
@@ -208,6 +209,7 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Enemy"))
         {
+            GameManager.death += points;
             myRb.velocity = Vector2.zero;
             transform.position = RespawnPoint;
         }
