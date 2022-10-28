@@ -54,6 +54,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -352,6 +353,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      rotating_coin_2: 3774374558072554424
+      rotating_coin_0: 1671283345461455480
+      rotating_coin_4: -3407462813947106266
+      rotating_coin_1: -3638366375080524030
+      rotating_coin_5: 3872596653540296786
+      rotating_coin_3: -7553202570169771781
+      rotating_coin_8: 3340004424929419039
+      rotating_coin_7: 5387897019352416549
+      rotating_coin_9: 5038537178737896021
+      rotating_coin_6: 3559339032303267374
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
